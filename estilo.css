@@ -22,3 +22,16 @@ nav a {
 section {
     padding: 50px 20px;
 }
+
+/* Isso garante que, ao clicar no menu, o título não fique "cortado" pelo topo da tela */
+section {
+    scroll-margin-top: 80px; /* Ajuste esse valor conforme o tamanho do seu menu */
+    padding-top: 20px;
+}
+
+/* Efeito visual para destacar o título quando a seção estiver ativa */
+section:target h1 {
+    color: #004a99; /* Muda a cor do título para azul quando for a seção ativa */
+    text-decoration: underline; /* Sublinha o título */
+    transition: 0.3s; /* Suaviza a transição */
+}
